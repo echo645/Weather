@@ -1,0 +1,190 @@
+img {max-width:100%}
+body{font-family:"Microsoft Yahei";
+background: url(https://b-ssl.duitang.com/uploads/item/201710/04/20171004184215_4VPWC.jpeg) left center;}
+#header{
+background-color:#E0EEEE;
+text-align:center;
+width: 100%;
+height:100px;
+  line-height:100px;
+}
+#whole-id{
+  width: 100%;
+  height:500px;
+  //background-color:#87CEEB;
+}
+#weather-content-id{
+  width: 90%;
+  height:400px;
+  margin:10px auto;
+  //background-color:#98FB98;
+}
+.weather-data{
+  width: 90%;
+  height:20px;
+  margin:10px auto;
+  font-size: 20px;
+}
+.poi-icon {
+    background: url(https://p.ssl.qhimg.com/d/inn/18619b34/pos.png) no-repeat left center;
+    background-size: 20px 24px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 20px;
+    vertical-align: top;
+}
+.time{
+  display: inline-block;
+  padding-left: 20px;
+}
+.temperature{
+    display: inline-block;
+    margin-top:50px;
+    padding-left: 80px;
+    display: inline-block;
+    font-size: 90px;
+    font-weight: 700;
+    height: 72px;
+    line-height: 72px;
+}
+.temperature-circle{
+    display: inline-block;
+    margin-top:50px;
+    border-radius: 100%;
+    border: 4px solid #000;
+    height: 12px;
+    vertical-align: top;
+    width: 12px;
+}
+.weather-info{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    width: 48px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+.air-wind{
+  display: inline-block;
+  padding-top:10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 80px;
+}
+.weather-hour{
+  display: inline-block;
+  width: 90%;
+  height:150px;
+  margin:10px auto;
+  font-size: 18px;
+  font-weight: 550;
+}
+.weather-section{
+  display: inline-block;
+    overflow: hidden;
+    width: 9%;
+    position: relative;
+    vertical-align: top;
+    line-width: 9%;
+  
+}
+ul{
+      list-style: none;
+  
+}
+.weather-section li {
+    line-height: 22px;
+    padding: 15px 0;
+    text-align: center;
+    width: 144px;
+  background-color:rgba(216,191,216,0.5);;
+}
+.temperature-hour{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.temperature-circle-hour{
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #000;
+    height: 4px;
+    vertical-align: top;
+    width: 4px;
+}
+.weather-section-icon{
+  background: url(https://p.ssl.qhimg.com/d/inn/18619b34/pos.png)no-repeat left center;
+  background-size: 20px 24px;
+    display: inline-block;
+    height: 40px;
+    line-height: 20px;
+    padding-left: 20px;
+    vertical-align: top; 
+}
+.weather-week{
+  display: inline-block;
+  width: 90%;
+  margin:20px auto;
+  font-size: 18px;
+  font-weight: 550;
+}
+.weather-week-section li {
+  display: inline-block;
+    height:30px;
+    line-height: 30px;
+    padding: 10px 0;
+  margin:0 auto;
+    width: 100%;
+  background-color:rgba(216,191,216,0.5);;
+}
+.day-data{
+  display: inline-block;
+  width:30%;
+  text-align: center;
+  margin-left: 20px;
+}
+.day{
+  display: inline-block;
+}
+.data{
+  display: inline-block;
+  margin-left:10px;
+}
+.week-weather-info{
+  display: inline-block;
+  width:30%;
+  text-align: center;
+  margin:0px auto;
+   
+}
+.week-icon{
+  background: url(https://p.ssl.qhimg.com/d/inn/18619b34/pos.png)no-repeat left center;
+  background-size: 20px 24px;
+    display: inline-block;
+    height: 30px;
+    line-height: 20px;
+    padding-left: 20px;
+    vertical-align: top; 
+}
+.week-info{
+  display: inline-block;
+}
+.week-temperature{
+  width:30%;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+}
+.week-temp{
+  display: inline-block;
+}
+.temperature-circle-week{
+  display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #000;
+    height: 4px;
+    vertical-align: top;
+    width: 4px;
+}
