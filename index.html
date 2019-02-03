@@ -18,7 +18,7 @@
     <div class="weather-data" id="weather-data-id">
       <span class="poi-icon"></span>
       <div class="city-change-all">
-      <strong class="palce">成都</strong>
+      <strong class="palce" id="palce-id">成都</strong>
       <div class="city-select" id="city-select-id">
           <form action="weather-change" id="weather-change-id">
             <select class="js-change-city" id="js-change-city" data-name="成都">
@@ -41,9 +41,9 @@
       </div>
     </div>
     <div class="temperature-info">
-      <div class="temperature">4</div>
+      <div class="temperature" id="temperature-id">4</div>
       <div class="temperature-circle"></div>
-      <div class="weather-info">阴</div>
+      <div class="weather-info" id="weather-info-id">阴</div>
     </div>
     <div class="air-wind">
       <span class="air-info">空气 优</span>
@@ -133,8 +133,8 @@
       </ul>
     </div>
     <div class="weather-week">
-      <ul class="weather-week-section">
-        <li>
+      <ul class="weather-week-section-1" id="weather-week-section-1-id">
+        <li id="weather-week-section-1-li">
           <div class="day-data">
           <div class="day">今天</div>
           <div class="data">1/31</div>
@@ -152,8 +152,8 @@
           </div>
         </li>
       </ul>
-      <ul class="weather-week-section">
-        <li>
+      <ul class="weather-week-section-2" id="weather-week-section-2-id">
+        <li id="weather-week-section-2-li">
           <div class="day-data">
           <div class="day">明天</div>
           <div class="data">2/1</div>
@@ -171,8 +171,8 @@
           </div>
         </li>
       </ul>
-      <ul class="weather-week-section">
-        <li>
+      <ul class="weather-week-section-3" id="weather-week-section-3-id">
+        <li id="weather-week-section-3-li">
           <div class="day-data">
           <div class="day">周六</div>
           <div class="data">2/2</div>
@@ -190,8 +190,8 @@
           </div>
         </li>
       </ul>
-      <ul class="weather-week-section">
-        <li>
+      <ul class="weather-week-section-4" id="weather-week-section-4-id">
+        <li id="weather-week-section-4-li">
           <div class="day-data">
           <div class="day">周日</div>
           <div class="data">2/3</div>
@@ -209,8 +209,8 @@
           </div>
         </li>
       </ul>
-      <ul class="weather-week-section">
-        <li>
+      <ul class="weather-week-section-5" id="weather-week-section-5-id">
+        <li id="weather-week-section-5-li">
           <div class="day-data">
           <div class="day">周一</div>
           <div class="data">2/3</div>
@@ -228,8 +228,8 @@
           </div>
         </li>
       </ul>
-      <ul class="weather-week-section">
-        <li>
+      <ul class="weather-week-section-6" id="weather-week-section-6-id">
+        <li id="weather-week-section-6-li">
           <div class="day-data">
           <div class="day">周二</div>
           <div class="data">2/5</div>
@@ -247,7 +247,37 @@
           </div>
         </li>
       </ul>
+      <ul class="weather-week-section-7" id="weather-week-section-7-id">
+        <li id="weather-week-section-7-li">
+          <div class="day-data">
+          <div class="day">周三</div>
+          <div class="data">2/6</div>
+          </div>
+          <div class="week-weather-info">
+            <span class="week-icon"></span>
+            <span class="week-info">小雨</span>
+          </div>
+          <div class="week-temperature">
+          <div class="week-temp">5</div>
+          <div class="temperature-circle-week"></div>
+            <span>～</span>
+            <div class="week-temp">11</div>
+          <div class="temperature-circle-week"></div>
+          </div>
+        </li>
+      </ul>
+      <ul class="weather-week-section-8" id="weather-week-section-8-id">
+        <li id="weather-week-section-8-li">
+          <div class="day" onclick="showMore()">点击显示更多</div>
+          </li>
+      </ul>
+      <ul class="weather-week-section-9" id="weather-week-section-9-id">
+        <li id="weather-week-section-9-li">
+          <div class="day" onclick="pickUp()">点击收起更多</div>
+          </li>
+      </ul>
     </div>
+    
   </div>
   </div>
 </body>
