@@ -1,6 +1,6 @@
-var chengduArray=new Array("³É¶¼","4","Òõ");
-var beijingArray=new Array("±±¾©","-2","Ñ©");
-var hangzhouArray=new Array("º¼Öİ","5","Çç");
+var chengduArray = { "place":"æˆéƒ½" , "temperature":"4" ,"weatherinfo":"é˜´"};
+var beijingArray = { "place":"åŒ—äº¬" , "temperature":"-2" ,"weatherinfo":"é›ª"};
+var hangzhouArray = { "place":"æ­å·" , "temperature":"5" ,"weatherinfo":"æ™´"};
 function startTime() {
 				var today = new Date();
 				var h = today.getHours();
@@ -15,7 +15,7 @@ function startTime() {
         var day=today.getDay();
 				m = checkTime(m);
 				s = checkTime(s);
-        var dayarray=new Array("ĞÇÆÚÈÕ","ĞÇÆÚÒ»","ĞÇÆÚ¶ş","ĞÇÆÚÈı","ĞÇÆÚËÄ","ĞÇÆÚÎå","ĞÇÆÚÁù")
+        var dayarray=new Array("æ˜ŸæœŸæ—¥","æ˜ŸæœŸä¸€","æ˜ŸæœŸäºŒ","æ˜ŸæœŸä¸‰","æ˜ŸæœŸå››","æ˜ŸæœŸäº”","æ˜ŸæœŸå…­")
 				document.getElementById('time-txt').innerHTML =
 				h + ":" + m + ":" + s;
         document.getElementById('date-txt').innerHTML =
@@ -30,37 +30,38 @@ function OpenDiv(){
   document.getElementById("city-select-id").style.display="block";
 }
 function changecity(cityArray){
-  document.getElementById("palce-id").innerHTML=cityArray[0];
-  document.getElementById("temperature-id").innerHTML=cityArray[1];
-  document.getElementById("weather-info-id").innerHTML=cityArray[2];
+  document.getElementById("palce-id").innerHTML=cityArray['place'];
+  document.getElementById("temperature-id").innerHTML=cityArray['temperature'];
+  document.getElementById("weather-info-id").innerHTML=cityArray['weatherinfo'];
 }
 function CloseDivSubmit(){
   document.getElementById("city-select-id").style.display="none";
   var sel=document.getElementById("js-change-city");
-  if(sel.value=="³É¶¼"){
+  if(sel.value=="æˆéƒ½"){
     changecity(chengduArray);
-  }else if(sel.value=="±±¾©"){
+  }else if(sel.value=="åŒ—äº¬"){
     changecity(beijingArray);
-  }else if(sel.value=="º¼Öİ"){
+  }else if(sel.value=="æ­å·"){
     changecity(hangzhouArray);
   }
 }
 function CloseDivCancel(){
   document.getElementById("city-select-id").style.display="none";
+  
 }
-function showMore(){
-  document.getElementById("weather-week-section-4-li").style.display="inline-block";
-  document.getElementById("weather-week-section-5-li").style.display="inline-block";
-  document.getElementById("weather-week-section-6-li").style.display="inline-block";
-  document.getElementById("weather-week-section-7-li").style.display="inline-block";
-  document.getElementById("weather-week-section-8-li").style.display="none";
-  document.getElementById("weather-week-section-9-li").style.display="inline-block";
-}
-function pickUp(){
-  document.getElementById("weather-week-section-4-li").style.display="none";
-  document.getElementById("weather-week-section-5-li").style.display="none";
-  document.getElementById("weather-week-section-6-li").style.display="none";
-  document.getElementById("weather-week-section-7-li").style.display="none";
-  document.getElementById("weather-week-section-8-li").style.display="inline-block";
-  document.getElementById("weather-week-section-9-li").style.display="none";
+function toggleMore(button){
+  for(var i=4;i<8;i++) {
+    var id = 'weather-week-section-'+i+'-li';
+    var sec = document.getElementById(id);
+    if (sec.style.display=="inline-block"){
+      sec.style.display="none";
+    }else{
+      sec.style.display="inline-block";
+    }
+  }
+  if(button.innerHTML=="ç‚¹å‡»æ˜¾ç¤ºæ›´å¤š"){
+    button.innerHTML="ç‚¹å‡»æ”¶èµ·æ›´å¤š";
+  }else{
+    button.innerHTML="ç‚¹å‡»æ˜¾ç¤ºæ›´å¤š";
+  }
 }
